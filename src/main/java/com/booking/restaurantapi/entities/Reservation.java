@@ -25,6 +25,9 @@ public class Reservation {
 	@Column(name = "PERSON")
 	private Long person;
 	
+	@Column(name = "TURN")
+	private Long turn;
+	
 	@Column(name = "DATE")
 	private Long date;
 	
@@ -70,5 +73,13 @@ public class Reservation {
 
 	public void setRestaurant(Restaurant restaurant) {
 		this.restaurant = restaurant;
+	}
+
+	public Long getTurn() {
+		return turn;
+	}
+
+	public void setTurn(Long turn) {
+		this.turn = turn;
 	}
 }
